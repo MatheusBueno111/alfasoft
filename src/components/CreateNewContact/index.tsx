@@ -45,6 +45,7 @@ const CreateNewContact: React.FC = () => {
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((url) => {
           setImageUrl(url)
+          console.log(progress)
         })
       },
     )
